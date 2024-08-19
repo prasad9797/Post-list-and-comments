@@ -1,0 +1,4 @@
+@for(post of postList; track post.id){
+<p (click)="displayComment(post.id)">{{ post.id }} - {{ post.title }}</p>
+@if(showCommentId === post.id){
+<app-comments [postId]="post.id"> </app-comments> } }
